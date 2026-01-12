@@ -1,0 +1,55 @@
+/* CSS for searchbox */
+.input-container {
+  position: relative;
+  width: 300px;
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  box-sizing: border-box;
+}
+/* css for profile  */
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.user-icon {
+  font-size: 60px;
+  color: rgb(8, 8, 8);
+  background-color: rgb(240, 237, 237);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.chevron-icon {
+  font-size: 60px;
+  margin-left: 0.5rem; 
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        padding: 10px;
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        padding: 10px;
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        padding: 10px;
+    }
+}

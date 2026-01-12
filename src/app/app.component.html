@@ -1,0 +1,62 @@
+<div
+    *ngIf="!root && showLayout && showLayout1 && showLayout2 && showLayout3 && showLayout4 && showLayout5 && showLayout6 && showLayout7 && showLayout8 && showLayout9 && showLayout10 && showLayout11 && showLayout12 && expert && dashboard && import">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+</div>
+
+<div *ngIf="!showLayout">
+    <app-slide2></app-slide2>
+</div>
+<!-- <div *ngIf="!showLayout1">
+    <app-slide3></app-slide3>
+</div> -->
+<div *ngIf="!showLayout2">
+    <app-slide4></app-slide4>
+</div>
+<div *ngIf="!showLayout3">
+    <app-slide5></app-slide5>
+</div>
+<div *ngIf="!showLayout4">
+    <app-slide6></app-slide6>
+</div>
+<div *ngIf="!showLayout5">
+    <app-slide7></app-slide7>
+</div>
+<div *ngIf="!showLayout6">
+    <app-slide8></app-slide8>
+</div>
+<div *ngIf="!showLayout7">
+    <app-slide9></app-slide9>
+</div>
+<div *ngIf="!showLayout8">
+    <app-slide10></app-slide10>
+</div>
+<div *ngIf="!showLayout9">
+    <app-slide11></app-slide11>
+</div>
+<div *ngIf="!showLayout10">
+    <app-slide12></app-slide12>
+</div>
+<div *ngIf="!showLayout11">
+    <app-slide13></app-slide13>
+</div>
+<div *ngIf="!showLayout12">
+    <app-slide14></app-slide14>
+</div>
+<div *ngIf="root"><app-login></app-login></div>
+
+<div *ngIf="!expert"><app-loginexpert></app-loginexpert></div>
+
+<div *ngIf="!dashboard"><app-dashboard></app-dashboard></div>
+
+<div *ngIf="!import"><app-import></app-import></div>
+<!-- <div *ngIf="!showLayout12">
+    <app-slide13></app-slide13>
+</div> -->
+<!-- <app-header *ngIf="showLayout"></app-header> -->
+<!-- <app-sidebar *ngIf="showLayout">
+    <app-slide3></app-slide3>
+</app-sidebar> -->
+<!-- <app-slide4></app-slide4> -->
+
+<!-- <router-outlet></router-outlet> -->

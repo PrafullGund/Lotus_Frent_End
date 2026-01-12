@@ -1,0 +1,44 @@
+<form [formGroup]="importForm" (ngSubmit)="onSubmit()" class="container mt-5">
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Course Registration</h5>
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name" />
+        <div class="text-danger" *ngIf="importForm.get('name')?.touched && importForm.get('name')?.invalid">
+          Name is required.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email" />
+        <div class="text-danger" *ngIf="importForm.get('email')?.touched && importForm.get('email')?.invalid">
+          Valid email is required.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mobile No.</label>
+        <input type="text" class="form-control" formControlName="mobile" />
+        <div class="text-danger" *ngIf="importForm.get('mobile')?.touched && importForm.get('mobile')?.invalid">
+          Mobile number must be 10 digits.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Course Name</label>
+        <input type="text" class="form-control" formControlName="courseName" />
+        <div class="text-danger" *ngIf="importForm.get('courseName')?.touched && importForm.get('courseName')?.invalid">
+          Course name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer text-end">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

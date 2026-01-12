@@ -1,0 +1,10 @@
+.slide3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;/* Use your full-screen background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 40px;
+}

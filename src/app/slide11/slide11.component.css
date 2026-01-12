@@ -1,0 +1,118 @@
+.full-screen {
+    margin-top: 10;
+    background-color: rgb(61, 61, 63);
+    color: white;
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+}
+
+/* .fullscreen {
+  /* background-color: #131842; *
+  min-height: 100vh;
+  /* display: flex; *
+  align-items: center;
+  justify-content: center;
+} */
+
+.bar-container {
+    position: relative;
+    height: 300px;
+    width: 90px;
+    margin: 50px auto;
+}
+
+.gav-bar {
+    background-color: #ec8123;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+}
+
+.hwm-line {
+    position: absolute;
+    background-color: black;
+    height: 10px;
+    width: 145px;
+    /* left: 0px; */
+}
+
+.gav-label {
+    position: absolute;
+     top: -20px; 
+    left: -10px;
+    /* font-weight: bold; */
+    font-size: 13px;
+}
+
+.hwm-label {
+    position: absolute;
+    top: 25px;
+    /* Adjust this according to the percentage of HWM vs GAV */
+    /* left: 110%; */
+    /* font-weight: bold; */
+    font-size: 13px;
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+    padding: 2rem;
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.line-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.line-animate.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.line-animate.delay-2 {
+    animation-delay: 1s;
+}
+
+.line-animate.delay-3 {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        /* padding: 10px; */
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        /* padding: 10px; */
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        /* padding: 10px; */
+    }
+}

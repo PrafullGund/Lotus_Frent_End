@@ -1,0 +1,50 @@
+<div class="full-screen">
+    <h1 style="color: rgb(255, 165, 0)">
+        Knowledge Check - Explanation
+    </h1>
+    <div class="row w-100 align-items-center text-white px-5">
+        <!-- Left Side: Title -->
+        <div class="col-md-5 text-start slide-in-left">
+            <div class="bar-container">
+                <div class="gav-label">GAV = $18.00</div>
+                <div class="gav-bar"></div>
+                <div class="hwm-line" style="top: 50px;"></div> <!-- adjust top value based on relative value -->
+                <div class="hwm-label" >HWM = $15.00</div>
+            </div>
+        </div>
+
+        <!-- Right Side: Description -->
+        <div class="col-md-7 text-start">
+            <h2><b>What is Hurdle Rate?</b></h2>
+            <p class="line-animate delay-1">
+                The HWM for Fund ABC for this performance fee cycle is $15.00
+            </p>
+            <p class="line-animate delay-2">
+                • The GAV for Fund ABC for this performance fee cycle is $ 18.00
+            </p>
+            <p class="line-animate delay-3">
+                • Because the GAV exceeded the HWM, the fund is in performance:
+                GAV > HWM
+                $18.00 > $15.00
+
+            </p>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-end gap-3 mx-2">
+        <button class="btn btn-primary text-light btn btn-primary" [routerLink]="['/slide10']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </button>
+        <button class="btn btn-primary  text-light  btn btn-primary" [routerLink]="['/slide12']">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            </svg>
+        </button>
+    </div>
+</div>

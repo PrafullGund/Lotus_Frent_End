@@ -1,0 +1,33 @@
+.slide-color{
+    text-align: center;
+    color: white;
+    background-color:   rgb(67, 67, 74);
+    min-height: 100vh; 
+     min-width: 100vw;
+    background-size: cover;
+    padding: 2rem;
+}
+.validation>img{
+    width: 27vw;
+    
+
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        padding: 10px;
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        padding: 10px;
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        padding: 10px;
+    }
+}

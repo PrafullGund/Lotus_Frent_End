@@ -1,0 +1,31 @@
+.section{
+    background-image: url(../../assets/images/loginbg1-BSHCmkkd.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+.container{
+    background-color: white;
+}
+.root{
+    
+    overflow-x: hidden;
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        padding: 10px;
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        padding: 10px;
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        padding: 10px;
+    }
+}

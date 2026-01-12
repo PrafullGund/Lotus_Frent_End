@@ -1,0 +1,47 @@
+<div class="root ">
+    <section class=" section gradient-form m-0 py-3 login-container">
+        <!-- <div class="container main-div "> -->
+        <div class="row d-flex justify-content-center align-items-center " style="height: 96vh;">
+            <div class="col-xl-10">
+                <div class="row justify-content-center">
+                    <div class=" col-lg-6 border bg-light align-items-center rounded-3">
+                        <div class="card-body p-md-3 mx-md-4 bg-light">
+                            <div class="text-center"><img src="../../assets/images/lotus.webp" alt="logo"
+                                    style="width: 185px;">
+                                <h4 class="mt-1 mb-5 pb-1">Welcome to our platform</h4>
+                            </div>
+                            <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                                <p>Please login to your account</p>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" id="email" class="form-control" name="email"
+                                        [(ngModel)]="email" placeholder="Phone number or email address" required />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                     <label class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control" name="password"
+                                        [(ngModel)]="password" placeholder="Enter your Password" required />
+                                </div>
+
+                                <div class="text-center pt-1 mb-5 pb-1">
+                                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                        type="submit">
+                                        Log in 
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div style="text-align: center;">
+                                <p style="font-size: small;">Copyright @2025 <a href="https://bhojsoft.com/"
+                                        target="blank"><b>BHOJSOFT SOLUTIONS.</b></a> All Rights are Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+</div>

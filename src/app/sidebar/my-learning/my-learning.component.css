@@ -1,0 +1,23 @@
+.shadow{
+    box-shadow: rgbs(0,0,0,0.35);
+    width: 350px;
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        padding: 10px;
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        padding: 10px;
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        padding: 10px;
+    }
+}

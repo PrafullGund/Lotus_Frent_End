@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper #sidebar {
+    width: 200px;
+    background-color: rgb(8, 8, 103);
+    position: sticky;
+    height: 100vh;
+    top: 0;
+}
+
+.color {
+    color: white;
+
+}
+
+#sidebar>li,
+#sidebar>li>a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+/* for desktop view */
+@media(min-width:992px){
+    .full-screen{
+        padding: 10px;
+    }
+
+}
+/* for tablet view */
+@media(min-width:768) and (max-width: 991px){
+    .full-screen{
+        padding: 10px;
+    }
+}
+/* for mobile view */
+@media(min-width:767px){
+    .full-screen{
+        padding: 10px;
+    }
+}
